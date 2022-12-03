@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: Montserrat, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar.is-black {
+  background-color: #5477f7ed;
+}
+
+.navbar.is-black .navbar-brand .navbar-link.is-active,
+.navbar.is-black .navbar-brand .navbar-link:focus,
+.navbar.is-black .navbar-brand .navbar-link:hover,
+.navbar.is-black .navbar-brand>a.navbar-item.is-active,
+.navbar.is-black .navbar-brand>a.navbar-item:focus,
+.navbar.is-black .navbar-brand>a.navbar-item:hover {
+  background-color: #5477f7ed;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    min-height: 5.4rem;
+  }
+
+  .navbar.is-black .navbar-end .navbar-link.is-active,
+  .navbar.is-black .navbar-end .navbar-link:focus,
+  .navbar.is-black .navbar-end .navbar-link:hover,
+  .navbar.is-black .navbar-end>a.navbar-item.is-active,
+  .navbar.is-black .navbar-end>a.navbar-item:focus,
+  .navbar.is-black .navbar-end>a.navbar-item:hover,
+  .navbar.is-black .navbar-start .navbar-link.is-active,
+  .navbar.is-black .navbar-start .navbar-link:focus,
+  .navbar.is-black .navbar-start .navbar-link:hover,
+  .navbar.is-black .navbar-start>a.navbar-item.is-active,
+  .navbar.is-black .navbar-start>a.navbar-item:focus,
+  .navbar.is-black .navbar-start>a.navbar-item:hover {
+    background-color: #5477f7ed;
+    color: #fff;
+  }
+}
+
+.hero.is-primary {
+  background-color: #6384ff;
+  color: #fff;
+}
+
+.button.is-primary.is-outlined {
+  background-color: transparent;
+  border-color: #6384ff ;
+  color: #6384ff;
+}
+
+.button.is-primary.is-outlined.is-focused, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined:hover {
+  background-color: #6384ff;
+  border-color: #6384ff;
+  color: #fff;
+}
+
+.button.is-primary.is-inverted.is-outlined.is-focused, .button.is-primary.is-inverted.is-outlined.is-hovered, .button.is-primary.is-inverted.is-outlined:focus, .button.is-primary.is-inverted.is-outlined:hover {
+  background-color: #fff;
+  color: #6384ff;
+}
+
+.section h2.title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  margin: 25px 0;
+  height: 2px;
+  border-radius: 1px;
+  border: none;
+  background: #6384ff;
+  background: -webkit-gradient(linear, left top, right top, from(#6384ff), color-stop(74%, #6384ff), color-stop(75%, white), color-stop(84%, white), color-stop(85%, #6384ff), to(#6384ff));
+  background: linear-gradient(90deg, #6384ff 0%, #6384ff 74%, white 75%, white 84%, #6384ff 85%, #6384ff 100%);
+}
+
+.section h2.title.has-text-centered::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-image {
+  max-width: 100px;
+}
+
+p {
+  line-height: 35px;
+}
+
+.image.has-overlay {
+  position: relative;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.image:hover .overlay::before,
+.image:hover .overlay::after {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.image .overlay::before,
+.image .overlay::after {
+  content: '';
+  display: block;
+  width: 140px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.image .overlay::before {
+  top: 35%;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+
+.image .overlay::after {
+  bottom: 35%;
+  -webkit-transform: translateY(25px);
+  transform: translateY(25px);
+}
+
+.pricing-table {
+  width: 100%;
+}
+
+.pricing-table.is-orange .pricing-head {
+  background-color: #fabc05;
+}
+
+.pricing-table.is-orange .checklist li::before {
+  color: #fabc05;
+}
+
+.pricing-table.is-orange:hover .price {
+  background-color: #fabc05;
+}
+
+.pricing-table.is-primary .pricing-head {
+  background-color: #5477f7;
+}
+
+.pricing-table.is-primary .checklist li::before {
+  color: #5477f7;
+}
+
+.pricing-table.is-primary:hover .price {
+  background-color: #5477f7;
+}
+
+.pricing-table.is-green .pricing-head {
+  background-color: #39A96F;
+}
+
+.pricing-table.is-green .checklist li::before {
+  color: #39A96F;
+}
+
+.pricing-table.is-green:hover .price {
+  background-color: #39A96F;
+}
+
+.pricing-table .pricing-head {
+  position: relative;
+  padding-top: 2rem;
+  height: 234px;
+}
+
+.pricing-table .pricing-head h3 {
+  color: white;
+}
+
+.pricing-table .pricing-head .price {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -70px;
+  -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .pricing-head .circles {
+  width: 101%;
+  height: 60%;
+  position: absolute;
+  bottom: -1px;
+  overflow: hidden;
+}
+
+.pricing-table .pricing-head .circles::before,
+.pricing-table .pricing-head .circles::after {
+  content: '';
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pricing-table .pricing-head .circles::before {
+  width: 190px;
+  height: 190px;
+  top: 50%;
+}
+
+.pricing-table .pricing-head .circles::after {
+  top: 0;
+  right: -20px;
+  width: 190px;
+  height: 190px;
+}
+
+.pricing-table .checklist {
+  padding-top: 30px;
+  padding-left: 50px;
+  font-weight: 700;
+  list-style-type: none;
+  line-height: 2;
+}
+
+.pricing-table .checklist li:not(.has-no-check):before {
+  font-family: 'FontAwesome';
+  content: '\f058';
+  margin: 0 5px 0 -15px;
+}
